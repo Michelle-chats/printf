@@ -64,6 +64,7 @@ typedef struct print_helper_s
 	char *mods;
 } printh_t;
 
+<<<<<<< HEAD
 int _printf(const char *format, ...);
 int handle_alpha_percent(printh_t *help_s, va_list args);
 char *create_buff(unsigned int bytes);
@@ -116,3 +117,21 @@ int get_longnumbase_len(unsigned long int num, unsigned int base);
 void fill_numbase_buff(unsigned int, unsigned int, char *b, int size);
 void fill_longnumbase_buff(unsigned long int num, unsigned int, char *, int);
 #endif /* _MAIN_H_ */
+=======
+int _putchar(char ch);
+int _puts(char *string);
+int printc(char *format, va_list);
+int printstr(char *format, va_list);
+int (*_pointer(char *format))(char *format, va_list);
+int _printf(char *format, ...);
+int printint(char *format, va_list pa);
+int integer(int number);
+int contadordigit(int number);
+int _abs(int number);
+int printpercent(char *format, va_list pa);
+int printhex(char *format, va_list);
+int printHEX(char *format, va_list);
+int printocta(char *format, va_list);
+int print_unsign(char *format, va_list);
+#endif
+>>>>>>> 0037aef41424123ca398245ad0d3cf867ef99947

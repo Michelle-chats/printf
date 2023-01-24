@@ -14,15 +14,15 @@ int (*_pointer(char *format))(char *format, va_list)
     int i;
 
     structype selector[] = {
-        {"%c", printc},
-        {"%s", printstr},
-        {"%d", printint},
-        {"%i", printint},
-        {"%%", printpercent},
-        {"%x", printhex},
-        {"%X", printHEX},
-        {"%o", printocta},
-        {NULL, NULL}};
+	    {"%c", printc},
+	    {"%s", printstr},
+	    {"%d", printint},
+	    {"%i", printint},
+	    {"%%", printpercent},
+	    {"%x", printhex},
+	    {"%X", printHEX},
+	    {"%o", printocta},
+	    {NULL, NULL}};
 
     if (format[1] == ' ' || format[1] == '\0')
         return (NULL);
